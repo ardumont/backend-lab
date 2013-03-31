@@ -1,4 +1,4 @@
-(ns mysql-to-datomic.core
+(ns backend-lab.core
   "Play with korma"
   (:use [korma.db]
         [korma.core])

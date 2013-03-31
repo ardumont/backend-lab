@@ -1,4 +1,4 @@
-(ns mysql-to-datomic.datomic-tryout
+(ns backend-lab.datomic-tryout
   "Play with datomic"
   (:use [datomic.api :only [q db] :as d]
         [clojure.pprint]))
