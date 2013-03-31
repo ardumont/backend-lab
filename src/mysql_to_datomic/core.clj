@@ -45,8 +45,9 @@
    {:professeur_classe [], :professeur_pwd "4584fb39733c2deae3340f0e30a9d629", :professeur_nom "Mme Heritier", :professeur_profil_id 1, :professeur_id 2})
 
   (select professeurs
-          (join professeur_classe)
-          (join classes))
++          (join professeur_classe (= :professeur_classe.ID_PROFESSEUR :professeurs.PROFESSEUR_ID))
++          (join classes           (= :professeur_classe.ID_CLASSE :classes.CLASSE_ID)))
+
   [{:professeur_pwd "21232f297a57a5a743894a0e4a801fc3", :professeur_nom "administrateur", :professeur_profil_id 1, :professeur_id 1}
    {:professeur_pwd "4584fb39733c2deae3340f0e30a9d629", :professeur_nom "Mme Heritier", :professeur_profil_id 1, :professeur_id 2}
    {:professeur_pwd "4584fb39733c2deae3340f0e30a9d629", :professeur_nom "Mme Heritier", :professeur_profil_id 1, :professeur_id 2}])
@@ -54,7 +55,7 @@
 (defentity classes
   (pk :CLASSE_ID)
   (table :CLASSES :classes)
-  (has-many professeurs))
+  (has-many professeur_classe {:fk :ID_CLASSE}))
 
 (comment
 
@@ -221,5 +222,9 @@
    {:id_matiere 22, :competence_nom "Etre capable de tenir sa place dans des activités collectives et intervenir très brièvement en soliste.", :competence_id 100}
    ...]
 
-  (exec-raw ["SELECT * FROM PROFESSEURS"] :results)
+  (exec-raw ["SELECT * FROM PROFESSEURS
+INNER JOIN PROFESSEUR_CLASSE ON PROFESSEURS.PROFESSEUR_ID = PROFESSEUR_CLASSE.ID_PROFESSEUR
+INNER JOIN CLASSES ON CLASSES.CLASSE_ID = PROFESSEUR_CLASSE.ID_CLASSE
+"] :results)
+
   (exec-raw ["SELECT * FROM PARAMETRES"] :results))
