@@ -31,15 +31,22 @@
   [{:id_professeur 2, :id_classe 1}
    {:id_professeur 2, :id_classe 2}]
 
+  (select professeur_classe
+          (with classes)
+          (with professeurs))
+
+  [{:classe_id 1, :professeur_nom "Mme Heritier", :id_classe 1, :classe_nom "ce1a", :professeur_id 2, :professeur_pwd "4584fb39733c2deae3340f0e30a9d629", :professeur_profil_id 1, :id_professeur 2, :classe_annee_scolaire "2011-2012", :id_ecole 1}
+   {:classe_id 2, :professeur_nom "Mme Heritier", :id_classe 2, :classe_nom "CE1A", :professeur_id 2, :professeur_pwd "4584fb39733c2deae3340f0e30a9d629", :professeur_profil_id 1, :id_professeur 2, :classe_annee_scolaire "2012-2013", :id_ecole 1}]
+
   (select professeurs
           (with professeur_classe))
+
   ({:professeur_classe [], :professeur_pwd "21232f297a57a5a743894a0e4a801fc3", :professeur_nom "administrateur", :professeur_profil_id 1, :professeur_id 1}
    {:professeur_classe [], :professeur_pwd "4584fb39733c2deae3340f0e30a9d629", :professeur_nom "Mme Heritier", :professeur_profil_id 1, :professeur_id 2})
 
   (select professeurs
-          (join professeur_classe (= :professeur_classe.ID_PROFESSEUR :professeurs.PROFESSEUR_ID))
-          (join classes           (= :classes.CLASSE_ID :professeur_classe.ID_CLASSE)))
-
+          (join professeur_classe)
+          (join classes))
   [{:professeur_pwd "21232f297a57a5a743894a0e4a801fc3", :professeur_nom "administrateur", :professeur_profil_id 1, :professeur_id 1}
    {:professeur_pwd "4584fb39733c2deae3340f0e30a9d629", :professeur_nom "Mme Heritier", :professeur_profil_id 1, :professeur_id 2}
    {:professeur_pwd "4584fb39733c2deae3340f0e30a9d629", :professeur_nom "Mme Heritier", :professeur_profil_id 1, :professeur_id 2}])
