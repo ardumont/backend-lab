@@ -1,0 +1,15 @@
+[
+ {:db/id #db/id[:db.part/user]
+  :person/name      "Raffestin"
+  :person/firstname "Elisabeth"
+  :person/profile   :person.profile/headmaster}
+
+ {:db/id #db/id[:db.part/user]
+  :person/name      "Heritier"
+  :person/firstname "Christelle"
+  :person/profile   :person.profile/teacher}
+
+ {:db/id #db/id[:db.part/user]
+  :person/name      "Dumont"
+  :person/firstname "Antoine"
+  :person/profile   :person.profile/admin}]
