@@ -45,8 +45,8 @@
    {:professeur_classe [], :professeur_pwd "4584fb39733c2deae3340f0e30a9d629", :professeur_nom "Mme Heritier", :professeur_profil_id 1, :professeur_id 2})
 
   (select professeurs
-+          (join professeur_classe (= :professeur_classe.ID_PROFESSEUR :professeurs.PROFESSEUR_ID))
-+          (join classes           (= :professeur_classe.ID_CLASSE :classes.CLASSE_ID)))
+          (join professeur_classe (= :professeur_classe.ID_PROFESSEUR :professeurs.PROFESSEUR_ID))
+          (join classes           (= :professeur_classe.ID_CLASSE :classes.CLASSE_ID)))
 
   [{:professeur_pwd "21232f297a57a5a743894a0e4a801fc3", :professeur_nom "administrateur", :professeur_profil_id 1, :professeur_id 1}
    {:professeur_pwd "4584fb39733c2deae3340f0e30a9d629", :professeur_nom "Mme Heritier", :professeur_profil_id 1, :professeur_id 2}
