@@ -26,8 +26,7 @@
 @(d/transact conn data-tx)
 
 (pprint (q '[:find ?c ?fn ?n ?profile
-             :where [?c :person/profile]
-             [?c :person/firstname ?fn]
-             [?c :person/name ?n]
-             [?c :person/profile ?p]
-             [?p :db/ident ?profile]] (db conn)))
+             :where [?c :person/firstname ?fn]
+                    [?c :person/name ?n]
+                    [?c :person/profile ?p]
+                    [?p :db/ident ?profile]] (db conn)))
