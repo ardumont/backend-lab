@@ -89,7 +89,7 @@
 
 (-> '[:find ?dn ?cn
       :where
-      [?c :doomain/name ?dn]
+      [?c :domain/name ?dn]
       [?c :domain/cycle ?cc]
       [?cc :cycle/name ?cn]]
     (q (db conn))
@@ -127,8 +127,16 @@
 (-> '[:find ?sn ?subn
       :where
       [?c :skill/name ?sn]
-      [?c :skill/subject ?ss]
       [?ss :subject/name ?subn]]
+    (q (db conn))
+    seq
+    p/pprint)
+
+(p/pprint "query levels")
+(-> '[:find ?ln ?cn
+      :where
+      [?c :level/name ?ln]
+      [?lc :cycle/name ?cn]]
     (q (db conn))
     seq
     p/pprint)
