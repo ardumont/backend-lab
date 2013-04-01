@@ -25,8 +25,16 @@
 
 @(d/transact conn data-tx)
 
+;; persons
 (pprint (q '[:find ?c ?fn ?n ?profile
              :where [?c :person/firstname ?fn]
                     [?c :person/name ?n]
                     [?c :person/profile ?p]
-                    [?p :db/ident ?profile]] (db conn)))
+             [?p :db/ident ?profile]] (db conn)))
+
+;; query school
+(pprint (q '[:find ?sn ?st ?sz
+             :where [?c :school/name ?sn]
+                    [?c :school/town ?st]
+                    [?c :school/zipcode ?sz]]
+           (db conn)))

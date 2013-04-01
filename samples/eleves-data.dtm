@@ -12,4 +12,10 @@
  {:db/id #db/id[:db.part/user]
   :person/name      "Dumont"
   :person/firstname "Antoine"
-  :person/profile   :person.profile/admin}]
+  :person/profile   :person.profile/admin}
+
+ ;; school
+ {:db/id #db/id[:db.part/user]
+  :school/name      "Edouard Vaillant"
+  :school/town      "Blanc-mesnil"
+  :school/zipcode   "93150"}]
