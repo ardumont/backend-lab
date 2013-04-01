@@ -1,4 +1,4 @@
-[;; person
+[ ;; person
  {:db/id #db/id[:db.part/user]
   :person/name      "Raffestin"
   :person/firstname "Elisabeth"
@@ -15,7 +15,18 @@
   :person/profile   :person.profile/admin}
 
  ;; school
- {:db/id #db/id[:db.part/user]
+ {:db/id #db/id[:db.part/user -1000001]
   :school/name      "Edouard Vaillant"
   :school/town      "Blanc-mesnil"
-  :school/zipcode   "93150"}]
+  :school/zipcode   "93150"}
+
+ ;; classe
+ {:db/id #db/id[:db.part/user]
+  :classe/name      "ce1a"
+  :classe/year      "2011-2012"
+  :classe/school    #db/id[:db.part/user -1000001]}
+
+ {:db/id #db/id[:db.part/user]
+  :classe/name      "CE1A"
+  :classe/year      "2012-2013"
+  :classe/school    #db/id[:db.part/user -1000001]}]

@@ -32,9 +32,17 @@
                     [?c :person/profile ?p]
              [?p :db/ident ?profile]] (db conn)))
 
-;; query school
+;; schools
 (pprint (q '[:find ?sn ?st ?sz
              :where [?c :school/name ?sn]
                     [?c :school/town ?st]
                     [?c :school/zipcode ?sz]]
+           (db conn)))
+
+;; classe
+(pprint (q '[:find ?n ?y ?sn
+             :where [?c :classe/name ?n]
+                    [?c :classe/year ?y]
+                    [?c :classe/school ?i]
+                    [?i :school/name ?sn]]
            (db conn)))

@@ -21,7 +21,7 @@
   :db/doc "A person's profile"
   :db.install/_attribute :db.part/db}
 
- ;; different profile
+ ;; different profiles
  [:db/add #db/id[:db.part/user] :db/ident :person.profile/admin]
  [:db/add #db/id[:db.part/user] :db/ident :person.profile/headmaster]
  [:db/add #db/id[:db.part/user] :db/ident :person.profile/teacher]
@@ -49,5 +49,30 @@
   :db/cardinality :db.cardinality/one
   :db/fulltext true
   :db/doc "A school's zipcode"
+  :db.install/_attribute :db.part/db}
+
+ ;; classe
+ {:db/id #db/id[:db.part/db]
+  :db/ident :classe/name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "A class's name"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :classe/year
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "A class's year"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :classe/school
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/fulltext false
+  :db/doc "A class's school"
   :db.install/_attribute :db.part/db}
 ]
