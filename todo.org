@@ -1,0 +1,31 @@
+#+title: backlog
+#+author: Antoine R. Dumont
+
+* DONE connect to the mysql db
+CLOSED: [2013-04-01 lun. 20:47]
+* DONE mapping eleves db with korma
+CLOSED: [2013-04-01 lun. 20:48]
+* DONE connect to a datomic endpoint
+CLOSED: [2013-04-01 lun. 20:48]
+* TODO mapping to datomic [%]
+** DONE persons
+CLOSED: [2013-04-01 lun. 20:48]
+** DONE schools
+CLOSED: [2013-04-01 lun. 20:48]
+** DONE classes
+CLOSED: [2013-04-01 lun. 20:48]
+** DONE cycles
+CLOSED: [2013-04-01 lun. 20:49]
+** DONE domains
+CLOSED: [2013-04-01 lun. 20:50]
+** DONE subjects
+CLOSED: [2013-04-01 lun. 20:50]
+** DONE skills
+CLOSED: [2013-04-01 lun. 20:50]
+** TODO level
+** TODO comments
+** TODO individual-evals
+** TODO collective-evals
+** TODO marks
+** TODO periods
+** TODO profils
