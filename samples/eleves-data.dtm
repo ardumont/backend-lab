@@ -4,15 +4,14 @@
   :person/firstname "Elisabeth"
   :person/profile   :person.profile/headmaster}
 
- {:db/id #db/id[:db.part/user -1000002]
-  :person/name      "Heritier"
-  :person/firstname "Christelle"
-  :person/profile   :person.profile/teacher}
-
  {:db/id #db/id[:db.part/user -1000003]
   :person/name      "Dumont"
   :person/firstname "Antoine"
   :person/profile   :person.profile/admin}
+
+ {:db/id #db/id[:db.part/user -1000002]
+  :teacher/name      "Heritier"
+  :teacher/firstname "Christelle"}
 
  ;; schools
  {:db/id #db/id[:db.part/user -1000004]
@@ -22,16 +21,16 @@
 
  ;; classes
  {:db/id #db/id[:db.part/user -1000005]
-  :classe/name      "ce1a"
-  :classe/year      "2011-2012"
-  :classe/school    #db/id[:db.part/user -1000004]
-  :classe/teachers  [#db/id[:db.part/user -1000002]]}
+  :class/name      "ce1a"
+  :class/year      "2011-2012"
+  :class/school    #db/id[:db.part/user -1000004]
+  :class/teachers  [#db/id[:db.part/user -1000002]]}
 
  {:db/id #db/id[:db.part/user -1000006]
-  :classe/name      "CE1A"
-  :classe/year      "2012-2013"
-  :classe/school    #db/id[:db.part/user -1000004]
-  :classe/teachers  [#db/id[:db.part/user -1000003] #db/id[:db.part/user -1000002]]}
+  :class/name      "CE1A"
+  :class/year      "2012-2013"
+  :class/school    #db/id[:db.part/user -1000004]
+  :class/teachers  [#db/id[:db.part/user -1000002]]}
 
  ;; cycles
  {:db/id #db/id[:db.part/user -1000007]

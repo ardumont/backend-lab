@@ -36,6 +36,16 @@
     seq
     p/pprint)
 
+;; persons
+(p/pprint "teacher query")
+(-> '[:find ?fn ?n
+      :where
+      [?c :teacher/firstname ?fn]
+      [?c :teacher/name ?n]]
+    (q (db conn))
+    seq
+    p/pprint)
+
 ;; schools
 (p/pprint "school query")
 (-> '[:find ?c ?sn ?st ?sz
@@ -51,9 +61,9 @@
 (p/pprint "classe query - 1")
 (-> '[:find ?c ?n ?y ?sn
       :where
-      [?c :classe/name ?n]
-      [?c :classe/year ?y]
-      [?c :classe/school ?i]
+      [?c :class/name ?n]
+      [?c :class/year ?y]
+      [?c :class/school ?i]
       [?i :school/name ?sn]]
     (q (db conn))
     seq
@@ -62,11 +72,11 @@
 (p/pprint "classe query - 2")
 (-> '[:find ?n ?y ?tn ?tfn
       :where
-      [?c :classe/name ?n]
-      [?c :classe/year ?y]
-      [?c :classe/teachers ?t]
-      [?t :person/name ?tn]
-      [?t :person/firstname ?tfn]]
+      [?c :class/name ?n]
+      [?c :class/year ?y]
+      [?c :class/teachers ?t]
+      [?t :teacher/name ?tn]
+      [?t :teacher/firstname ?tfn]]
     (q (db conn))
     seq
     p/pprint)
