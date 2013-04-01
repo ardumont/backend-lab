@@ -31,4 +31,13 @@
   :classe/name      "CE1A"
   :classe/year      "2012-2013"
   :classe/school    #db/id[:db.part/user -1000004]
-  :classe/teachers  [#db/id[:db.part/user -1000003] #db/id[:db.part/user -1000002]]}]
+  :classe/teachers  [#db/id[:db.part/user -1000003] #db/id[:db.part/user -1000002]]}
+
+ ;; cycle
+ {:db/id #db/id[:db.part/user -1000007]
+  :cycle/name      "I"}
+ {:db/id #db/id[:db.part/user -1000007]
+  :cycle/name      "II"}
+ {:db/id #db/id[:db.part/user -1000007]
+  :cycle/name      "III"}
+ ]

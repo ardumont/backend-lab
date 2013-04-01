@@ -62,3 +62,9 @@
              [?t :person/name ?tn]
              [?t :person/firstname ?tfn]]
            (db conn)))
+
+(pprint "cycle query - 2")
+(pprint (q '[:find ?cn
+             :where
+             [?c :cycle/name ?cn]]
+           (db conn)))
