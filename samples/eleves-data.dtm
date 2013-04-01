@@ -1992,27 +1992,50 @@
   :skill/subject #db/id[:db.part/user -1000067]}
 
  ;; levels
- {:db/id #db/id[:db.part/user -1000068]
+ {:db/id #db/id[:db.part/user -1000683]
   :level/name "PS"
-  :domain/cycle #db/id[:db.part/user -1000007]}
- {:db/id #db/id[:db.part/user -1000069]
+  :level/cycle #db/id[:db.part/user -1000007]}
+ {:db/id #db/id[:db.part/user -1000684]
   :level/name "MS"
-  :domain/cycle #db/id[:db.part/user -1000007]}
- {:db/id #db/id[:db.part/user -1000070]
+  :level/cycle #db/id[:db.part/user -1000007]}
+ {:db/id #db/id[:db.part/user -1000685]
   :level/name "GS"
-  :domain/cycle #db/id[:db.part/user -1000008]}
- {:db/id #db/id[:db.part/user -1000071]
+  :level/cycle #db/id[:db.part/user -1000008]}
+ {:db/id #db/id[:db.part/user -1000686]
   :level/name "CP"
-  :domain/cycle #db/id[:db.part/user -1000008]}
- {:db/id #db/id[:db.part/user -1000072]
+  :level/cycle #db/id[:db.part/user -1000008]}
+ {:db/id #db/id[:db.part/user -1000687]
   :level/name "CE1"
-  :domain/cycle #db/id[:db.part/user -1000008]}
- {:db/id #db/id[:db.part/user -1000073]
+  :level/cycle #db/id[:db.part/user -1000008]}
+ {:db/id #db/id[:db.part/user -1000688]
   :level/name "CE2"
-  :domain/cycle #db/id[:db.part/user -1000009]}
- {:db/id #db/id[:db.part/user -1000074]
+  :level/cycle #db/id[:db.part/user -1000009]}
+ {:db/id #db/id[:db.part/user -1000689]
   :level/name "CM1"
-  :domain/cycle #db/id[:db.part/user -1000010]}
- {:db/id #db/id[:db.part/user -1000075]
+  :level/cycle #db/id[:db.part/user -1000009]}
+ {:db/id #db/id[:db.part/user -1000690]
   :level/name "CM2"
-  :domain/cycle #db/id[:db.part/user -1000011]}]
+  :level/cycle #db/id[:db.part/user -1000009]}
+
+ ;; periods
+ {:db/id #db/id[:db.part/user -1000691]
+  :period/name "p1"
+  :period/begin "rentree"
+  :period/end "toussaint"}
+ {:db/id #db/id[:db.part/user -1000692]
+  :period/name "p2"
+  :period/begin "toussaint"
+  :period/end "noel"}
+ {:db/id #db/id[:db.part/user -1000693]
+  :period/name "p3"
+  :period/begin "noel"
+  :period/end "fevrier"}
+ {:db/id #db/id[:db.part/user -1000694]
+  :period/name "p4"
+  :period/begin "fevrier"
+  :period/end "paques"}
+ {:db/id #db/id[:db.part/user -1000695]
+  :period/name "p5"
+  :period/begin "paques"
+  :period/end "ete"}
+ ]

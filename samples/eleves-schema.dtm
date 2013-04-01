@@ -160,4 +160,29 @@
   :db/fulltext false
   :db/doc "Level's cycle"
   :db.install/_attribute :db.part/db}
- ]
+
+ ;; periods
+ {:db/id #db/id[:db.part/db]
+  :db/ident :period/name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "Period name"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :period/begin
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "Period's beginning"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :period/end
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "Period's ending"
+  :db.install/_attribute :db.part/db}
+]

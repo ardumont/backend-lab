@@ -127,6 +127,7 @@
 (-> '[:find ?sn ?subn
       :where
       [?c :skill/name ?sn]
+      [?c :skill/subject ?ss]
       [?ss :subject/name ?subn]]
     (q (db conn))
     seq
@@ -136,7 +137,18 @@
 (-> '[:find ?ln ?cn
       :where
       [?c :level/name ?ln]
+      [?c :level/cycle ?lc]
       [?lc :cycle/name ?cn]]
+    (q (db conn))
+    seq
+    p/pprint)
+
+(p/pprint "query periods")
+(-> '[:find ?pn ?ps ?pe
+      :where
+      [?c :period/name ?pn]
+      [?c :period/begin ?ps]
+      [?c :period/end ?pe]]
     (q (db conn))
     seq
     p/pprint)
