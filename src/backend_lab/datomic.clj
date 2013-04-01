@@ -26,47 +26,58 @@
 
 ;; persons
 (p/pprint "person query")
-(p/pprint (q '[:find ?c ?fn ?n ?profile
-               :where
-               [?c :person/firstname ?fn]
-               [?c :person/name ?n]
-               [?c :person/profile ?p]
-               [?p :db/ident ?profile]] (db conn)))
+(-> '[:find ?c ?fn ?n ?profile
+      :where
+      [?c :person/firstname ?fn]
+      [?c :person/name ?n]
+      [?c :person/profile ?p]
+      [?p :db/ident ?profile]]
+    (q (db conn))
+    seq
+    p/pprint)
 
 ;; schools
 (p/pprint "school query")
-(p/pprint (q '[:find ?c ?sn ?st ?sz
-               :where
-               [?c :school/name ?sn]
-               [?c :school/town ?st]
-               [?c :school/zipcode ?sz]]
-             (db conn)))
+(-> '[:find ?c ?sn ?st ?sz
+      :where
+      [?c :school/name ?sn]
+      [?c :school/town ?st]
+      [?c :school/zipcode ?sz]]
+    (q (db conn))
+    seq
+    p/pprint)
 
 ;; classe
 (p/pprint "classe query - 1")
-(p/pprint (q '[:find ?c ?n ?y ?sn
-               :where
-               [?c :classe/name ?n]
-               [?c :classe/year ?y]
-               [?c :classe/school ?i]
-               [?i :school/name ?sn]]
-             (db conn)))
+(-> '[:find ?c ?n ?y ?sn
+      :where
+      [?c :classe/name ?n]
+      [?c :classe/year ?y]
+      [?c :classe/school ?i]
+      [?i :school/name ?sn]]
+    (q (db conn))
+    seq
+    p/pprint)
 
 (p/pprint "classe query - 2")
-(p/pprint (q '[:find ?n ?y ?tn ?tfn
-               :where
-               [?c :classe/name ?n]
-               [?c :classe/year ?y]
-               [?c :classe/teachers ?t]
-               [?t :person/name ?tn]
-               [?t :person/firstname ?tfn]]
-             (db conn)))
+(-> '[:find ?n ?y ?tn ?tfn
+      :where
+      [?c :classe/name ?n]
+      [?c :classe/year ?y]
+      [?c :classe/teachers ?t]
+      [?t :person/name ?tn]
+      [?t :person/firstname ?tfn]]
+    (q (db conn))
+    seq
+    p/pprint)
 
 (p/pprint "cycle query")
-(p/pprint (q '[:find ?cn
-               :where
-               [?c :cycle/name ?cn]]
-             (db conn)))
+(-> '[:find ?cn
+      :where
+      [?c :cycle/name ?cn]]
+    (q (db conn))
+    seq
+    p/pprint)
 
 ;; (->> (select domaines)
 ;;      (map (fn [{:keys [id_cycle domaine_nom]}]
@@ -76,12 +87,14 @@
 ;;                :domain/name domaine_nom
 ;;                :domain/cycle (load-string (str "#db/id[:db.part/user " cid "]"))}))))
 
-(p/pprint (q '[:find ?dn ?cn
-             :where
-             [?c :domain/name ?dn]
-             [?c :domain/cycle ?cc]
-             [?cc :cycle/name ?cn]]
-           (db conn)))
+(-> '[:find ?dn ?cn
+      :where
+      [?c :doomain/name ?dn]
+      [?c :domain/cycle ?cc]
+      [?cc :cycle/name ?cn]]
+    (q (db conn))
+    seq
+    p/pprint)
 
 ;; (->> (select matieres)
 ;;      (map (fn [{:keys [id_domaine matiere_nom matiere_id]}]
@@ -91,12 +104,14 @@
 ;;                :subject/name matiere_nom
 ;;                :subject/domain (load-string (str "#db/id[:db.part/user " id "]"))}))))
 
-(p/pprint (q '[:find ?sn ?dn
-             :where
-             [?c :subject/name ?sn]
-             [?c :subject/domain ?d]
-             [?d :domain/name ?dn]]
-           (db conn)))
+(-> '[:find ?sn ?dn
+      :where
+      [?c :subject/name ?sn]
+      [?c :subject/domain ?d]
+      [?d :domain/name ?dn]]
+    (q (db conn))
+    seq
+    p/pprint)
 
 ;; (->> (select competences)
 ;;      (map (fn [{:keys [id_matiere competence_nom competence_id]}]
@@ -109,9 +124,11 @@
 ;;                :skill/subject (load-string (str "#db/id[:db.part/user " id "]"))}))))
 
 (p/pprint "query skills")
-(p/pprint (q '[:find ?sn ?subn
-               :where
-               [?c :skill/name ?sn]
-               [?c :skill/subject ?ss]
-               [?ss :subject/name ?subn]]
-             (db conn)))
+(-> '[:find ?sn ?subn
+      :where
+      [?c :skill/name ?sn]
+      [?c :skill/subject ?ss]
+      [?ss :subject/name ?subn]]
+    (q (db conn))
+    seq
+    p/pprint)
