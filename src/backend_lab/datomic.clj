@@ -162,3 +162,25 @@
     (q (db conn))
     seq
     p/pprint)
+
+;; (->> (select eleves)
+;;      (map (fn [{:keys [eleve_nom eleve_date_naissance eleve_actif]}]
+;;             (let [pn  (clojure.string/split eleve_nom #" ")
+;;                   name (first pn)
+;;                   fname (second pn)]
+;;               {:db/id (load-string (str "#db/id[:db.part/user]"))
+;;                :pupil/name name
+;;                :pupil/firstname fname
+;;                :pupil/birthdate eleve_date_naissance
+;;                :pupil/active? eleve_actif}))))
+
+(p/pprint "query pupils")
+(-> '[:find ?pn ?pfn ?pb ?pa
+      :where
+      [?c :pupil/name ?pn]
+      [?c :pupil/firstname ?pfn]
+      [?c :pupil/birthdate ?pb]
+      [?c :pupil/active? ?pa]]
+    (q (db conn))
+    seq
+    p/pprint)

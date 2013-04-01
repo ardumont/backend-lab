@@ -1,4 +1,5 @@
-[ ;; teachers
+[
+ ;; teachers
  {:db/id #db/id[:db.part/db]
   :db/ident :teacher/name
   :db/valueType :db.type/string
@@ -201,4 +202,33 @@
   :db/fulltext true
   :db/doc "Period's ending"
   :db.install/_attribute :db.part/db}
-]
+
+ ;; pupils
+ {:db/id #db/id[:db.part/db]
+  :db/ident :pupil/name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "Pupil's name"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :pupil/firstname
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/doc "Pupil's firstname"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :pupil/birthdate
+  :db/valueType :db.type/instant
+  :db/cardinality :db.cardinality/one
+  :db/doc "Pupil's birthdate"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :pupil/active?
+  :db/valueType :db.type/boolean
+  :db/cardinality :db.cardinality/one
+  :db/doc "Is the pupil active?"
+  :db.install/_attribute :db.part/db}]

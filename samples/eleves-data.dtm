@@ -2037,4 +2037,51 @@
   :period/name "p5"
   :period/begin "paques"
   :period/end "ete"}
+
+ ;; pupils
+ {:db/id #db/id[:db.part/user -1034265] :pupil/name "ALGENE" :pupil/firstname "Ahmed" :pupil/birthdate #inst "2004-08-19T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034266] :pupil/name "ANANDHARSA" :pupil/firstname "Thisan" :pupil/birthdate #inst "2003-11-10T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034267] :pupil/name "BOLOS" :pupil/firstname "Cyril" :pupil/birthdate #inst "2004-09-16T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034268] :pupil/name "BOUGHANMI" :pupil/firstname "Enzo" :pupil/birthdate #inst "2004-03-25T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034269] :pupil/name "CASIMIR" :pupil/firstname "Noha" :pupil/birthdate #inst "2004-10-25T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034270] :pupil/name "CHERIF" :pupil/firstname "Sirine" :pupil/birthdate #inst "2004-02-28T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034271] :pupil/name "COMLAN" :pupil/firstname "Heather" :pupil/birthdate #inst "2004-05-24T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034272] :pupil/name "DEMIR" :pupil/firstname "Firat" :pupil/birthdate #inst "2003-06-12T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034273] :pupil/name "DOYEN" :pupil/firstname "Pritom" :pupil/birthdate #inst "2003-07-30T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034274] :pupil/name "EYENGUE" :pupil/firstname "Bradley" :pupil/birthdate #inst "2004-06-04T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034275] :pupil/name "HOUARI" :pupil/firstname "Samara" :pupil/birthdate #inst "2004-10-25T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034276] :pupil/name "JEAN" :pupil/firstname "Gaëtan" :pupil/birthdate #inst "2004-05-17T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034277] :pupil/name "KUGANESAN" :pupil/firstname "Varshayini" :pupil/birthdate #inst "2004-07-13T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034278] :pupil/name "MIRZA" :pupil/firstname "Moussa" :pupil/birthdate #inst "2004-05-27T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034279] :pupil/name "PADUCH" :pupil/firstname "Victoria" :pupil/birthdate #inst "2004-06-26T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034280] :pupil/name "RAHMOUN" :pupil/firstname "Hafsa" :pupil/birthdate #inst "2004-06-07T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034281] :pupil/name "RUDRA" :pupil/firstname "Livitha" :pupil/birthdate #inst "2004-08-02T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034282] :pupil/name "RAJINIKANTH" :pupil/firstname "Sri" :pupil/birthdate #inst "2003-08-28T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034283] :pupil/name "THAYALAN" :pupil/firstname "Arsaga" :pupil/birthdate #inst "2003-02-14T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034284] :pupil/name "TORZ" :pupil/firstname "Sorin" :pupil/birthdate #inst "2004-07-05T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034285] :pupil/name "VIYAZ" :pupil/firstname "Vaishigaa" :pupil/birthdate #inst "2004-07-05T22:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034286] :pupil/name "ZIDI" :pupil/firstname "Linda" :pupil/birthdate #inst "2004-01-02T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034287] :pupil/name "AHMED-EL-HADOUMI" :pupil/firstname "Anssaf" :pupil/birthdate #inst "2011-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034288] :pupil/name "AMALATHAS" :pupil/firstname "Agiban" :pupil/birthdate #inst "2011-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034289] :pupil/name "BERLINGUEZ" :pupil/firstname "Léandre" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034290] :pupil/name "BESKIWIN" :pupil/firstname "Johny-Fabien" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034291] :pupil/name "CHAIB" :pupil/firstname "Maram" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034292] :pupil/name "DAVENTHIRAN" :pupil/firstname "Gitika" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034293] :pupil/name "DEMIR" :pupil/firstname "Allan" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034294] :pupil/name "DYVRANDE" :pupil/firstname "Ambre" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034295] :pupil/name "ESTEVES-FIDALGO" :pupil/firstname "Léa" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034296] :pupil/name "FALL" :pupil/firstname "Elhadj" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034297] :pupil/name "HO" :pupil/firstname "NGO" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034298] :pupil/name "IDRI" :pupil/firstname "Kenza" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034299] :pupil/name "ISTANBULU" :pupil/firstname "Esad" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034300] :pupil/name "KANESARAJAH" :pupil/firstname "Thirsan" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034301] :pupil/name "PEREIRA" :pupil/firstname "Mathias" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034302] :pupil/name "RAJENDRAM" :pupil/firstname "Sharoopan" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034303] :pupil/name "RANJON" :pupil/firstname "Marion" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034304] :pupil/name "SARIKAYA" :pupil/firstname "Gizem" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034305] :pupil/name "SINGH" :pupil/firstname "Navjot" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034306] :pupil/name "SUTHAKARAN" :pupil/firstname "Thanusha" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034307] :pupil/name "VARATHARAJ" :pupil/firstname "Abisha" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+ {:db/id #db/id[:db.part/user -1034308] :pupil/name "RAJINIKANTH" :pupil/firstname "Sri-Janany" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
+
  ]
