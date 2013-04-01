@@ -1,4 +1,4 @@
-(ns backend-lab.core
+(ns backend-lab.mysql
   "Play with korma"
   (:use [korma.db]
         [korma.core])
