@@ -125,4 +125,22 @@
   :db/cardinality :db.cardinality/one
   :db/fulltext false
   :db/doc "Subject's domain"
-  :db.install/_attribute :db.part/db}]
+  :db.install/_attribute :db.part/db}
+
+ ;; skills
+ {:db/id #db/id[:db.part/db]
+  :db/ident :skill/name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "Skill name"
+  :db.install/_attribute :db.part/db}
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :skill/subject
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/fulltext false
+  :db/doc "Skill's subject"
+  :db.install/_attribute :db.part/db}
+ ]
