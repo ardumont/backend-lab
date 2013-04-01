@@ -77,10 +77,25 @@
 ;;                :domain/name domaine_nom
 ;;                :domain/cycle (str "#db/id[:db.part/user " cid "]")}))))
 
-(pprint "domain query")
+
 (pprint (q '[:find ?dn ?cn
              :where
              [?c :domain/name ?dn]
              [?c :domain/cycle ?cc]
              [?cc :cycle/name ?cn]]
+           (db conn)))
+
+;; (->> (select matieres)
+;;      (map (fn [{:keys [id_domaine matiere_nom matiere_id]}]
+;;             (let [m (zipmap (range 1 19) (map (partial * -1) (range 1000010 1000028)))
+;;                   id (m id_domaine)]
+;;               {:db/id (str "#db/id[:db.part/user " (- -1000028 matiere_id) "]")
+;;                :subject/name matiere_nom
+;;                :subject/domain (str "#db/id[:db.part/user " id "]")}))))
+
+(pprint (q '[:find ?sn ?dn
+             :where
+             [?c :subject/name ?sn]
+             [?c :subject/domain ?d]
+             [?d :domain/name ?dn]]
            (db conn)))

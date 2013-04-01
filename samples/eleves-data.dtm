@@ -95,4 +95,237 @@
  {:db/id #db/id[:db.part/user -1000027],
   :domain/name "Brevet informatique et Internet - niveau 1",
   :domain/cycle #db/id[:db.part/user -1000009]}
- ]
+
+ ;; subject
+ {:db/id #db/id[:db.part/user -1000029],
+  :subject/name "Communication",
+  :subject/domain #db/id[:db.part/user -1000010]}
+ {:db/id #db/id[:db.part/user -1000030],
+  :subject/name "Le langage d'accompagnement de l'action (langage en situation)",
+  :subject/domain #db/id[:db.part/user -1000010]}
+ {:db/id #db/id[:db.part/user -1000031],
+  :subject/name "Le langage d'évocation",
+  :subject/domain #db/id[:db.part/user -1000010]}
+ {:db/id #db/id[:db.part/user -1000032],
+  :subject/name "Le langage écrit - Fonctions de l'écrit",
+  :subject/domain #db/id[:db.part/user -1000010]}
+ {:db/id #db/id[:db.part/user -1000033],
+  :subject/name "Le langage écrit - Familiarisation avec la langue de l'écrit et la littérature",
+  :subject/domain #db/id[:db.part/user -1000010]}
+ {:db/id #db/id[:db.part/user -1000034],
+  :subject/name "Le langage écrit - Découverte des réalités sonores du langage",
+  :subject/domain #db/id[:db.part/user -1000010]}
+ {:db/id #db/id[:db.part/user -1000035],
+  :subject/name "Le langage écrit - Activités graphiques et écriture",
+  :subject/domain #db/id[:db.part/user -1000010]}
+ {:db/id #db/id[:db.part/user -1000036],
+  :subject/name "Le langage écrit - Découverte du principe alphabétique",
+  :subject/domain #db/id[:db.part/user -1000010]}
+ {:db/id #db/id[:db.part/user -1000037],
+  :subject/name "Vivre ensemble",
+  :subject/domain #db/id[:db.part/user -1000011]}
+ {:db/id #db/id[:db.part/user -1000038],
+  :subject/name "Réaliser une action que l'on peut mesurer",
+  :subject/domain #db/id[:db.part/user -1000012]}
+ {:db/id #db/id[:db.part/user -1000039],
+  :subject/name "Adapter ses déplacements à différents types d'environnements",
+  :subject/domain #db/id[:db.part/user -1000012]}
+ {:db/id #db/id[:db.part/user -1000040],
+  :subject/name "Coopérer et s'opposer individuellement ou collectivement",
+  :subject/domain #db/id[:db.part/user -1000012]}
+ {:db/id #db/id[:db.part/user -1000041],
+  :subject/name "Réaliser des actions à visée artistique, esthétique ou expressive",
+  :subject/domain #db/id[:db.part/user -1000012]}
+ {:db/id #db/id[:db.part/user -1000042],
+  :subject/name "Le domaine sensoriel",
+  :subject/domain #db/id[:db.part/user -1000013]}
+ {:db/id #db/id[:db.part/user -1000043],
+  :subject/name "Le domaine de la matière et des objets",
+  :subject/domain #db/id[:db.part/user -1000013]}
+ {:db/id #db/id[:db.part/user -1000044],
+  :subject/name "Le domaine du vivant, de l'environnement, de l'hygiène et de la santé",
+  :subject/domain #db/id[:db.part/user -1000013]}
+ {:db/id #db/id[:db.part/user -1000045],
+  :subject/name "Le domaine de la structuration de l'espace",
+  :subject/domain #db/id[:db.part/user -1000013]}
+ {:db/id #db/id[:db.part/user -1000046],
+  :subject/name "Le domaine de la structuration du temps",
+  :subject/domain #db/id[:db.part/user -1000013]}
+ {:db/id #db/id[:db.part/user -1000047],
+  :subject/name "Formes et grandeurs",
+  :subject/domain #db/id[:db.part/user -1000013]}
+ {:db/id #db/id[:db.part/user -1000048],
+  :subject/name "Quantités et nombres",
+  :subject/domain #db/id[:db.part/user -1000013]}
+ {:db/id #db/id[:db.part/user -1000049],
+  :subject/name "Le regard et le geste",
+  :subject/domain #db/id[:db.part/user -1000014]}
+ {:db/id #db/id[:db.part/user -1000050],
+  :subject/name "La voix et l'écoute",
+  :subject/domain #db/id[:db.part/user -1000014]}
+ {:db/id #db/id[:db.part/user -1000051],
+  :subject/name "Instruction civique et morale",
+  :subject/domain #db/id[:db.part/user -1000015]}
+ {:db/id #db/id[:db.part/user -1000052],
+  :subject/name "Lecture écriture",
+  :subject/domain #db/id[:db.part/user -1000016]}
+ {:db/id #db/id[:db.part/user -1000053],
+  :subject/name "Orthographe",
+  :subject/domain #db/id[:db.part/user -1000016]}
+ {:db/id #db/id[:db.part/user -1000054],
+  :subject/name "Grammaire et conjugaison",
+  :subject/domain #db/id[:db.part/user -1000016]}
+ {:db/id #db/id[:db.part/user -1000055],
+  :subject/name "Vocabulaire",
+  :subject/domain #db/id[:db.part/user -1000016]}
+ {:db/id #db/id[:db.part/user -1000056],
+  :subject/name "Langage oral",
+  :subject/domain #db/id[:db.part/user -1000016]}
+ {:db/id #db/id[:db.part/user -1000057],
+  :subject/name "Organisation et gestion des données",
+  :subject/domain #db/id[:db.part/user -1000017]}
+ {:db/id #db/id[:db.part/user -1000058],
+  :subject/name "Nombres",
+  :subject/domain #db/id[:db.part/user -1000017]}
+ {:db/id #db/id[:db.part/user -1000059],
+  :subject/name "Calculs",
+  :subject/domain #db/id[:db.part/user -1000017]}
+ {:db/id #db/id[:db.part/user -1000060],
+  :subject/name "Géométrie",
+  :subject/domain #db/id[:db.part/user -1000017]}
+ {:db/id #db/id[:db.part/user -1000061],
+  :subject/name "Grandeurs et mesures",
+  :subject/domain #db/id[:db.part/user -1000017]}
+ {:db/id #db/id[:db.part/user -1000063],
+  :subject/name "Le monde du vivant",
+  :subject/domain #db/id[:db.part/user -1000018]}
+ {:db/id #db/id[:db.part/user -1000064],
+  :subject/name "La matière et les techniques",
+  :subject/domain #db/id[:db.part/user -1000018]}
+ {:db/id #db/id[:db.part/user -1000065],
+  :subject/name "Langue vivante",
+  :subject/domain #db/id[:db.part/user -1000019]}
+ {:db/id #db/id[:db.part/user -1000066],
+  :subject/name "Arts visuels",
+  :subject/domain #db/id[:db.part/user -1000020]}
+ {:db/id #db/id[:db.part/user -1000067],
+  :subject/name "Voix et chant",
+  :subject/domain #db/id[:db.part/user -1000020]}
+ {:db/id #db/id[:db.part/user -1000068],
+  :subject/name "Education physique et sportive",
+  :subject/domain #db/id[:db.part/user -1000021]}
+ {:db/id #db/id[:db.part/user -1000069],
+  :subject/name "Littérature (lire, dire, écrire)",
+  :subject/domain #db/id[:db.part/user -1000022]}
+ {:db/id #db/id[:db.part/user -1000070],
+  :subject/name "Observation réfléchie de la langue (orthographe, grammaire, conjugaison, vocabulaire)",
+  :subject/domain #db/id[:db.part/user -1000022]}
+ {:db/id #db/id[:db.part/user -1000071],
+  :subject/name "Langues étrangères et régionales",
+  :subject/domain #db/id[:db.part/user -1000022]}
+ {:db/id #db/id[:db.part/user -1000072],
+  :subject/name "Histoire",
+  :subject/domain #db/id[:db.part/user -1000022]}
+ {:db/id #db/id[:db.part/user -1000073],
+  :subject/name "Géographie",
+  :subject/domain #db/id[:db.part/user -1000022]}
+ {:db/id #db/id[:db.part/user -1000074],
+  :subject/name "Compétences générales",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000075],
+  :subject/name "Exploitation de données numériques : Problèmes relevant des quatre opérations",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000076],
+  :subject/name "Exploitation de données numériques : Proportionnalité",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000077],
+  :subject/name "Exploitation de données numériques : Organisation et représentation de données numériques",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000078],
+  :subject/name "Exploitation de données numériques : Connaissance des nombres entiers naturels, Désignations orales et écrites des nombres entiers naturels",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000079],
+  :subject/name "Exploitation de données numériques : Ordre sur les nombres entiers naturels",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000080],
+  :subject/name "Exploitation de données numériques : Structuration arithmétique des nombres entiers naturels",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000081],
+  :subject/name "Exploitation de données numériques : Connaissance des fractions simples et des nombres décimaux, Fractions",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000082],
+  :subject/name "Exploitation de données numériques : Désignations orales et écrites des nombres décimaux",
+  :subject/domain #db/id[
+:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000083],
+  :subject/name "Exploitation de données numériques : Ordre sur les nombres décimaux",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000084],
+  :subject/name "Exploitation de données numériques : Relations entre certains nombres décimaux",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000085],
+  :subject/name "Calcul: Résultats mémorisés, procédures automatisées",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000086],
+  :subject/name "Calcul réfléchi",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000087],
+  :subject/name "Calcul instrumenté",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000088],
+  :subject/name "Espace et géométrie - Repérage, utilisation de plans, de cartes",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000089],
+  :subject/name "Espace et géométrie - Relations et propriétés : alignement, perpendicularité, parallélisme, égalité de longueurs, symétrie axiale",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000090],
+  :subject/name "Espace et géométrie - Figures planes : triangle (et cas particuliers), carré, rectangle, losange, cercle",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000091],
+  :subject/name "Espace et géométrie - Solides : cube, parallélépipède rectangle",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000092],
+  :subject/name "Espace et géométrie - Agrandissement, réduction",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000093],
+  :subject/name "Espace et géométrie - Grandeurs et mesure: Longueurs, masses, volumes (contenances), repérage du temps, durées",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000094],
+  :subject/name "Espace et géométrie - Aires",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000095],
+  :subject/name "Espace et géométrie - Angles",
+  :subject/domain #db/id[:db.part/user -1000023]}
+ {:db/id #db/id[:db.part/user -1000096],
+  :subject/name "Sciences expérimentales et technologie",
+  :subject/domain #db/id[:db.part/user -1000024]}
+ {:db/id #db/id[:db.part/user -1000097],
+  :subject/name "Arts visuels",
+  :subject/domain #db/id[:db.part/user -1000025]}
+ {:db/id #db/id[:db.part/user -1000098],
+  :subject/name "Education musicale",
+  :subject/domain #db/id[:db.part/user -1000025]}
+ {:db/id #db/id[:db.part/user -1000099],
+  :subject/name "Education physique et sportive",
+  :subject/domain #db/id[:db.part/user -1000026]}
+ {:db/id #db/id[:db.part/user -1000100],
+  :subject/name "Maîtriser les premières bases de la technologie informatique et avoir une approche des principales fonctions d'un ordinateur.",
+  :subject/domain #db/id[:db.part/user -1000027]}
+ {:db/id #db/id[:db.part/user -1000101],
+  :subject/name "Adopter une attitude citoyenne face aux informations véhiculées par les outils informatiques",
+  :subject/domain #db/id[:db.part/user -1000027]}
+ {:db/id #db/id[:db.part/user -1000102],
+  :subject/name "Produire, crée, modifier et exploiter un document à l'aide d'un logiciel de traitement de texte.",
+  :subject/domain #db/id[:db.part/user -1000027]}
+ {:db/id #db/id[:db.part/user -1000103],
+  :subject/name "Chercher, se documenter au moyen d'un produit multimédia (cédérom, dévédérom, site Internet, base de données).",
+  :subject/domain #db/id[:db.part/user -1000027]}
+ {:db/id #db/id[:db.part/user -1000104],
+  :subject/name "Communiquer au moyen d'une messagerie électronique.",
+  :subject/domain #db/id[:db.part/user -1000027]}
+ {:db/id #db/id[:db.part/user -1000105],
+  :subject/name "Le temps",
+  :subject/domain #db/id[:db.part/user -1000018]}
+ {:db/id #db/id[:db.part/user -1000106],
+  :subject/name "L'espace",
+  :subject/domain #db/id[:db.part/user -1000018]}]
