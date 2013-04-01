@@ -77,7 +77,7 @@
   :db.install/_attribute :db.part/db}
 
  {:db/id #db/id[:db.part/db]
-  :db/ident :classe/person
+  :db/ident :classe/teachers
   :db/valueType :db.type/ref
   :db/cardinality :db.cardinality/many
   :db/fulltext false

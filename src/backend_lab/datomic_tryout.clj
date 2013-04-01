@@ -26,6 +26,7 @@
 @(d/transact conn data-tx)
 
 ;; persons
+(pprint "person query")
 (pprint (q '[:find ?c ?fn ?n ?profile
              :where
              [?c :person/firstname ?fn]
@@ -34,6 +35,7 @@
              [?p :db/ident ?profile]] (db conn)))
 
 ;; schools
+(pprint "school query")
 (pprint (q '[:find ?c ?sn ?st ?sz
              :where
              [?c :school/name ?sn]
@@ -42,6 +44,7 @@
            (db conn)))
 
 ;; classe
+(pprint "classe query - 1")
 (pprint (q '[:find ?c ?n ?y ?sn
              :where
              [?c :classe/name ?n]
@@ -50,10 +53,12 @@
              [?i :school/name ?sn]]
            (db conn)))
 
-(pprint (q '[:find ?n ?y ?teachers
+(pprint "classe query - 2")
+(pprint (q '[:find ?n ?y ?tn ?tfn
              :where
              [?c :classe/name ?n]
              [?c :classe/year ?y]
-             [?c :classe/person ?t]
-             [?t :person/name ?teachers]]
+             [?c :classe/teachers ?t]
+             [?t :person/name ?tn]
+             [?t :person/firstname ?tfn]]
            (db conn)))

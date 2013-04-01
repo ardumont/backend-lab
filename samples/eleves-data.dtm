@@ -25,10 +25,10 @@
   :classe/name      "ce1a"
   :classe/year      "2011-2012"
   :classe/school    #db/id[:db.part/user -1000004]
-  :classe/person  [#db/id[:db.part/user -1000002]]}
+  :classe/teachers  [#db/id[:db.part/user -1000002]]}
 
  {:db/id #db/id[:db.part/user -1000006]
   :classe/name      "CE1A"
   :classe/year      "2012-2013"
   :classe/school    #db/id[:db.part/user -1000004]
-  :classe/person  [#db/id[:db.part/user -1000002]]}]
+  :classe/teachers  [#db/id[:db.part/user -1000003] #db/id[:db.part/user -1000002]]}]
