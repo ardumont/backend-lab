@@ -63,8 +63,24 @@
              [?t :person/firstname ?tfn]]
            (db conn)))
 
-(pprint "cycle query - 2")
+(pprint "cycle query")
 (pprint (q '[:find ?cn
              :where
              [?c :cycle/name ?cn]]
+           (db conn)))
+
+;; (->> (select domaines)
+;;      (map (fn [{:keys [id_cycle domaine_nom]}]
+;;             (let [m {1 -1000007 2 -1000008 3 -1000009}
+;;                   cid (m id_cycle)]
+;;               {:db/id (str "#db/id[:db.part/user " -1000010 "]")
+;;                :domain/name domaine_nom
+;;                :domain/cycle (str "#db/id[:db.part/user " cid "]")}))))
+
+(pprint "domain query")
+(pprint (q '[:find ?dn ?cn
+             :where
+             [?c :domain/name ?dn]
+             [?c :domain/cycle ?cc]
+             [?cc :cycle/name ?cn]]
            (db conn)))

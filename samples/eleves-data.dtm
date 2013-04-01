@@ -36,8 +36,63 @@
  ;; cycle
  {:db/id #db/id[:db.part/user -1000007]
   :cycle/name      "I"}
- {:db/id #db/id[:db.part/user -1000007]
+ {:db/id #db/id[:db.part/user -1000008]
   :cycle/name      "II"}
- {:db/id #db/id[:db.part/user -1000007]
+ {:db/id #db/id[:db.part/user -1000009]
   :cycle/name      "III"}
+
+ {:db/id #db/id[:db.part/user -1000010],
+  :domain/name "Le langage au coeur des apprentissages",
+  :domain/cycle #db/id[:db.part/user -1000007]}
+ {:db/id #db/id[:db.part/user -1000011],
+  :domain/name "Vivre ensemble",
+  :domain/cycle #db/id[:db.part/user -1000007]}
+ {:db/id #db/id[:db.part/user -1000012],
+  :domain/name "Agir et s'exprimer avec son corps",
+  :domain/cycle #db/id[:db.part/user -1000007]}
+ {:db/id #db/id[:db.part/user -1000013],
+  :domain/name "Découvrir le monde",
+  :domain/cycle #db/id[:db.part/user -1000007]}
+ {:db/id #db/id[:db.part/user -1000014],
+  :domain/name "La sensibilité, l'imagination et la création",
+  :domain/cycle #db/id[:db.part/user -1000007]}
+ {:db/id #db/id[:db.part/user -1000015],
+  :domain/name "Instruction civique et morale",
+  :domain/cycle #db/id[:db.part/user -1000008]}
+ {:db/id #db/id[:db.part/user -1000016],
+  :domain/name "Français",
+  :domain/cycle #db/id[:db.part/user -1000008]}
+ {:db/id #db/id[:db.part/user -1000017],
+  :domain/name  "Mathématiques",
+  :domain/cycle #db/id[:db.part/user -1000008]}
+ {:db/id #db/id[:db.part/user -1000018],
+  :domain/name "Découverte du monde",
+  :domain/cycle #db/id[:db.part/user -1000008]}
+ {:db/id #db/id[:db.part/user -1000019],
+  :domain/name "Langue vivante",
+  :domain/cycle #db/id[:db.part/user -1000008]}
+ {:db/id #db/id[:db.part/user -1000020],
+  :domain/name "Education artistique",
+  :domain/cycle #db/id[:db.part/user -1000008]}
+ {:db/id #db/id[:db.part/user -1000021],
+  :domain/name "Education physique et sportive",
+  :domain/cycle #db/id[:db.part/user -1000008]}
+ {:db/id #db/id[:db.part/user -1000022],
+  :domain/name "Langue française, éducation littéraire et humaine",
+  :domain/cycle #db/id[:db.part/user -1000009]}
+ {:db/id #db/id[:db.part/user -1000023],
+  :domain/name "Education scientifique - Mathématiques",
+  :domain/cycle #db/id[:db.part/user -1000009]}
+ {:db/id #db/id[:db.part/user -1000024],
+  :domain/name "Sciences expérimentales et technologie",
+  :domain/cycle #db/id[:db.part/user -1000009]}
+ {:db/id #db/id[:db.part/user -1000025],
+  :domain/name "Education artistique",
+  :domain/cycle #db/id[:db.part/user -1000009]}
+ {:db/id #db/id[:db.part/user -1000026],
+  :domain/name "Education physique et sportive",
+  :domain/cycle #db/id[:db.part/user -1000009]}
+ {:db/id #db/id[:db.part/user -1000027],
+  :domain/name "Brevet informatique et Internet - niveau 1",
+  :domain/cycle #db/id[:db.part/user -1000009]}
  ]
