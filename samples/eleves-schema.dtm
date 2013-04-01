@@ -1,4 +1,4 @@
-[ ;; teacher
+[ ;; person
  {:db/id #db/id[:db.part/db]
   :db/ident :person/name
   :db/valueType :db.type/string
