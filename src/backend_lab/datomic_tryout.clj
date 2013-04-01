@@ -27,22 +27,33 @@
 
 ;; persons
 (pprint (q '[:find ?c ?fn ?n ?profile
-             :where [?c :person/firstname ?fn]
-                    [?c :person/name ?n]
-                    [?c :person/profile ?p]
+             :where
+             [?c :person/firstname ?fn]
+             [?c :person/name ?n]
+             [?c :person/profile ?p]
              [?p :db/ident ?profile]] (db conn)))
 
 ;; schools
-(pprint (q '[:find ?sn ?st ?sz
-             :where [?c :school/name ?sn]
-                    [?c :school/town ?st]
-                    [?c :school/zipcode ?sz]]
+(pprint (q '[:find ?c ?sn ?st ?sz
+             :where
+             [?c :school/name ?sn]
+             [?c :school/town ?st]
+             [?c :school/zipcode ?sz]]
            (db conn)))
 
 ;; classe
-(pprint (q '[:find ?n ?y ?sn
-             :where [?c :classe/name ?n]
-                    [?c :classe/year ?y]
-                    [?c :classe/school ?i]
-                    [?i :school/name ?sn]]
+(pprint (q '[:find ?c ?n ?y ?sn
+             :where
+             [?c :classe/name ?n]
+             [?c :classe/year ?y]
+             [?c :classe/school ?i]
+             [?i :school/name ?sn]]
+           (db conn)))
+
+(pprint (q '[:find ?n ?y ?teachers
+             :where
+             [?c :classe/name ?n]
+             [?c :classe/year ?y]
+             [?c :classe/person ?t]
+             [?t :person/name ?teachers]]
            (db conn)))

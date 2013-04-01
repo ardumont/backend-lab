@@ -75,4 +75,11 @@
   :db/fulltext false
   :db/doc "A class's school"
   :db.install/_attribute :db.part/db}
-]
+
+ {:db/id #db/id[:db.part/db]
+  :db/ident :classe/person
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/many
+  :db/fulltext false
+  :db/doc "Class's teacher(s)"
+  :db.install/_attribute :db.part/db}]

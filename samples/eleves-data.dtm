@@ -1,32 +1,34 @@
 [ ;; person
- {:db/id #db/id[:db.part/user]
+ {:db/id #db/id[:db.part/user -1000001]
   :person/name      "Raffestin"
   :person/firstname "Elisabeth"
   :person/profile   :person.profile/headmaster}
 
- {:db/id #db/id[:db.part/user]
+ {:db/id #db/id[:db.part/user -1000002]
   :person/name      "Heritier"
   :person/firstname "Christelle"
   :person/profile   :person.profile/teacher}
 
- {:db/id #db/id[:db.part/user]
+ {:db/id #db/id[:db.part/user -1000003]
   :person/name      "Dumont"
   :person/firstname "Antoine"
   :person/profile   :person.profile/admin}
 
  ;; school
- {:db/id #db/id[:db.part/user -1000001]
+ {:db/id #db/id[:db.part/user -1000004]
   :school/name      "Edouard Vaillant"
   :school/town      "Blanc-mesnil"
   :school/zipcode   "93150"}
 
  ;; classe
- {:db/id #db/id[:db.part/user]
+ {:db/id #db/id[:db.part/user -1000005]
   :classe/name      "ce1a"
   :classe/year      "2011-2012"
-  :classe/school    #db/id[:db.part/user -1000001]}
+  :classe/school    #db/id[:db.part/user -1000004]
+  :classe/person  [#db/id[:db.part/user -1000002]]}
 
- {:db/id #db/id[:db.part/user]
+ {:db/id #db/id[:db.part/user -1000006]
   :classe/name      "CE1A"
   :classe/year      "2012-2013"
-  :classe/school    #db/id[:db.part/user -1000001]}]
+  :classe/school    #db/id[:db.part/user -1000004]
+  :classe/person  [#db/id[:db.part/user -1000002]]}]
