@@ -2084,4 +2084,24 @@
  {:db/id #db/id[:db.part/user -1034307] :pupil/name "VARATHARAJ" :pupil/firstname "Abisha" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
  {:db/id #db/id[:db.part/user -1034308] :pupil/name "RAJINIKANTH" :pupil/firstname "Sri-Janany" :pupil/birthdate #inst "2004-12-31T23:00:00.000-00:00" :pupil/active? true}
 
- ]
+ ;; mark
+ {:db/id #db/id[:db.part/user -1034309]
+  :mark/name "Acquis"
+  :mark/label "A"
+  :mark/value 20}
+ {:db/id #db/id[:db.part/user -1034310]
+  :mark/name "A renforcer"
+  :mark/label "AR"
+  :mark/value 15}
+ {:db/id #db/id[:db.part/user -1034311]
+  :mark/name "En cours d'acquisition"
+  :mark/label "ECA"
+  :mark/value 10}
+ {:db/id #db/id[:db.part/user -1034312]
+  :mark/name "Non acquis"
+  :mark/label "NA"
+  :mark/value 5}
+ {:db/id #db/id[:db.part/user -1034313]
+  :mark/name "Non évaluée"
+  :mark/label "NE"
+  :mark/value 0}]

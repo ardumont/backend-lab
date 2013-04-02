@@ -81,6 +81,16 @@
     seq
     p/pprint)
 
+;; (p/pprint "teacher query - 2 - teacher's class")
+;; (-> '[:find ?n ?y ?tn ?tfn
+;;       :where
+;;       [?t :teacher/name ?tn]
+;;       [?t :teacher/firstname ?tfn]
+;;       [?cc :class/teachers ?t]]
+;;     (q (db conn))
+;;     seq
+;;     p/pprint)
+
 (p/pprint "cycle query")
 (-> '[:find ?cn
       :where
@@ -174,13 +184,23 @@
 ;;                :pupil/birthdate eleve_date_naissance
 ;;                :pupil/active? eleve_actif}))))
 
-(p/pprint "query pupils")
+(p/pprint "pupils query")
 (-> '[:find ?pn ?pfn ?pb ?pa
       :where
       [?c :pupil/name ?pn]
       [?c :pupil/firstname ?pfn]
       [?c :pupil/birthdate ?pb]
       [?c :pupil/active? ?pa]]
+    (q (db conn))
+    seq
+    p/pprint)
+
+(p/pprint "marks query")
+(-> '[:find ?mn ?ml ?mv
+      :where
+      [?c :mark/name ?mn]
+      [?c :mark/label ?ml]
+      [?c :mark/value ?mv]]
     (q (db conn))
     seq
     p/pprint)

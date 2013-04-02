@@ -2,7 +2,8 @@
   "Play with korma"
   (:use [korma.db]
         [korma.core])
-  (:require [clojure.string :as s]))
+  (:require [clojure.string :as s]
+            [clojure.pprint :as p]))
 
 (defdb db (mysql {:db       "eleves"
                   :user     "eleves"
