@@ -2104,4 +2104,15 @@
  {:db/id #db/id[:db.part/user -1034313]
   :mark/name "Non évaluée"
   :mark/label "NE"
-  :mark/value 0}]
+  :mark/value 0}
+
+ ;; profiles
+ {:db/id #db/id[:db.part/user -1034314]
+  :profile/name "Admin"
+  :profile/description "Admin of the application"}
+ {:db/id #db/id[:db.part/user -1034315]
+  :profile/name "Teacher"
+  :profile/description "School teacher, main user of the application."}
+ {:db/id #db/id[:db.part/user -1034316]
+  :profile/name "Headmaster"
+  :profile/description "School Headmaster"}]

@@ -204,3 +204,12 @@
     (q (db conn))
     seq
     p/pprint)
+
+(p/pprint "profiles query")
+(-> '[:find ?pn ?pd
+      :where
+      [?c :profile/name ?pn]
+      [?c :profile/description ?pd]]
+    (q (db conn))
+    seq
+    p/pprint)
