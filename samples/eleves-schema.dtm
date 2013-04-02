@@ -272,4 +272,41 @@
   :db/cardinality :db.cardinality/one
   :db/fulltext true
   :db/doc "Profil's description"
+  :db.install/_attribute :db.part/db}
+
+ ;; collective-evals
+ {:db/id #db/id[:db.part/db]
+  :db/ident :coll-eval/name
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "Collective evaluation's name"
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id[:db.part/db]
+  :db/ident :coll-eval/description
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "Collective evaluation's description"
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id[:db.part/db]
+  :db/ident :coll-eval/date
+  :db/valueType :db.type/instant
+  :db/cardinality :db.cardinality/one
+  :db/fulltext false
+  :db/doc "Collective evaluation's date"
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id[:db.part/db]
+  :db/ident :coll-eval/class
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/fulltext false
+  :db/doc "Collective evaluation's class"
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id[:db.part/db]
+  :db/ident :coll-eval/period
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/fulltext false
+  :db/doc "Collective evaluation's period"
   :db.install/_attribute :db.part/db}]

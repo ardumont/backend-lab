@@ -2115,4 +2115,36 @@
   :profile/description "School teacher, main user of the application."}
  {:db/id #db/id[:db.part/user -1034316]
   :profile/name "Headmaster"
-  :profile/description "School Headmaster"}]
+  :profile/description "School Headmaster"}
+
+ ;; collective-evals
+ {:db/id #db/id[:db.part/user -1034317]
+  :coll-eval/name "périodes 1 et 2"
+  :coll-eval/description ""
+  :coll-eval/date #inst "2011-11-28T23:00:00.000-00:00"
+  :coll-eval/class #db/id[:db.part/user -1000005]
+  :coll-eval/period #db/id[:db.part/user -1000692]}
+ {:db/id #db/id[:db.part/user -1034318]
+  :coll-eval/name "période 3"
+  :coll-eval/description ""
+  :coll-eval/date #inst "2012-03-09T23:00:00.000-00:00"
+  :coll-eval/class #db/id[:db.part/user -1000005]
+  :coll-eval/period #db/id[:db.part/user -1000693]}
+ {:db/id #db/id[:db.part/user -1034319]
+  :coll-eval/name "périodes 4 et 5"
+  :coll-eval/description ""
+  :coll-eval/date #inst "2012-06-21T22:00:00.000-00:00"
+  :coll-eval/class #db/id[:db.part/user -1000005]
+  :coll-eval/period #db/id[:db.part/user -1000695]}
+ {:db/id #db/id[:db.part/user -1034320]
+  :coll-eval/name "Lecture compréhension"
+  :coll-eval/description ""
+  :coll-eval/date #inst "2012-11-26T23:00:00.000-00:00"
+  :coll-eval/class #db/id[:db.part/user -1000006]
+  :coll-eval/period #db/id[:db.part/user -1000691]}
+ {:db/id #db/id[:db.part/user -1034321]
+  :coll-eval/name "période 1"
+  :coll-eval/description ""
+  :coll-eval/date #inst "2012-11-26T23:00:00.000-00:00"
+  :coll-eval/class #db/id[:db.part/user -1000006]
+  :coll-eval/period #db/id[:db.part/user -1000691]}]

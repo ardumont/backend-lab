@@ -7,7 +7,7 @@ CLOSED: [2013-04-01 lun. 20:47]
 CLOSED: [2013-04-01 lun. 20:48]
 * DONE connect to a datomic endpoint
 CLOSED: [2013-04-01 lun. 20:48]
-* TODO mapping to datomic [80%]
+* TODO mapping to datomic [75%]
 ** DONE persons
 CLOSED: [2013-04-01 lun. 20:48]
 ** DONE schools
@@ -32,6 +32,7 @@ CLOSED: [2013-04-01 lun. 23:41]
 CLOSED: [2013-04-02 mar. 09:08]
 ** DONE profiles
 CLOSED: [2013-04-02 mar. 09:15]
+** IN-PROGRESS collective-evals
 ** TODO individual-evals
-** TODO collective-evals
-** PENDING comments
+** PENDING comments (still usefull?)
+** PENDING comm_conseil_maitres (usefull?)

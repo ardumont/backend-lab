@@ -213,3 +213,37 @@
     (q (db conn))
     seq
     p/pprint)
+
+;; (->> (select evaluations_collectives)
+;;      (map (fn [{:keys [id_classe id_periode eval_col_date eval_col_description eval_col_nom eval_col_id]}]
+;;             (let [m-eval (->> (range 1034317 1034323)
+;;                               (map (partial * -1))
+;;                               (zipmap (range 1 6)))
+;;                   m-class {1 -1000005
+;;                            2 -1000006}
+;;                   m-period {1 -1000691
+;;                             2 -1000692
+;;                             3 -1000693
+;;                             4 -1000694
+;;                             5 -1000695}]
+;;               {:db/id (load-string (str "#db/id[:db.part/user " (m-eval eval_col_id) "]"))
+;;                :coll-eval/name eval_col_nom
+;;                :coll-eval/description eval_col_description
+;;                :coll-eval/date eval_col_date
+;;                :coll-eval/class (load-string (str "#db/id[:db.part/user " (m-class id_classe) "]"))
+;;                :coll-eval/period (load-string (str "#db/id[:db.part/user " (m-period id_periode) "]"))}))))
+
+(p/pprint "collectives evaluations query")
+(-> '[:find ?cen ?ced ?cedate ?cep ?cn ?pn
+      :where
+      [?c :coll-eval/name ?cen]
+      [?c :coll-eval/description ?ced]
+      [?c :coll-eval/date ?cedate]
+      [?c :coll-eval/period ?cep]
+      [?c :coll-eval/class ?cec]
+      [?cec :class/name ?cn]
+      [?c :coll-eval/period ?cep]
+      [?cep :period/name ?pn]]
+    (q (db conn))
+    seq
+    p/pprint)
