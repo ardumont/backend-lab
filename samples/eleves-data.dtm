@@ -32,6 +32,11 @@
   :class/school    #db/id[:db.part/user -1000004]
   :class/teachers  [#db/id[:db.part/user -1000002]]}
 
+ {:db/id #db/id[:db.part/user -1000002]
+  :teacher/name      "Heritier"
+  :teacher/firstname "Christelle"
+  :teacher/classes    [#db/id[:db.part/user -1000005] #db/id[:db.part/user -1000006]]}
+
  ;; cycles
  {:db/id #db/id[:db.part/user -1000007]
   :cycle/name      "I"}

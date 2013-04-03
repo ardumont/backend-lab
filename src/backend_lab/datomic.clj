@@ -36,12 +36,14 @@
     seq
     p/pprint)
 
-;; persons
+;; teachers
 (p/pprint "teacher query")
-(-> '[:find ?fn ?n
+(-> '[:find ?fn ?n ?cn
       :where
       [?c :teacher/firstname ?fn]
-      [?c :teacher/name ?n]]
+      [?c :teacher/name ?n]
+      [?c :teacher/classes ?cs]
+      [?cs :class/name ?cn]]
     (q (db conn))
     seq
     p/pprint)
