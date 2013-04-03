@@ -309,4 +309,41 @@
   :db/cardinality :db.cardinality/one
   :db/fulltext false
   :db/doc "Collective evaluation's period"
+  :db.install/_attribute :db.part/db}
+
+ ;; individual evaluations
+ {:db/id #db/id[:db.part/db]
+  :db/ident :ind-eval/comment
+  :db/valueType :db.type/string
+  :db/cardinality :db.cardinality/one
+  :db/fulltext true
+  :db/doc "Individual evaluation's comment"
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id[:db.part/db]
+  :db/ident :ind-eval/mark
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/fulltext false
+  :db/doc "Individual evaluation's mark"
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id[:db.part/db]
+  :db/ident :ind-eval/pupil
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/fulltext false
+  :db/doc "Individual evaluation pupil"
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id[:db.part/db]
+  :db/ident :ind-eval/coll-eval
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/fulltext false
+  :db/doc "Individual evaluation's collective evaluation"
+  :db.install/_attribute :db.part/db}
+ {:db/id #db/id[:db.part/db]
+  :db/ident :ind-eval/skill
+  :db/valueType :db.type/ref
+  :db/cardinality :db.cardinality/one
+  :db/fulltext false
+  :db/doc "Individual evaluation's skill"
   :db.install/_attribute :db.part/db}]

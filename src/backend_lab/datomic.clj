@@ -247,3 +247,47 @@
     (q (db conn))
     seq
     p/pprint)
+
+;; utility function to help in transcoding id from mysql to datomic
+;; (defn map-ids
+;;   "Compute the map of tempids from mysql to datomic"
+;;   [s e]
+;;   (->> (range s e)
+;;        (map (partial * -1))
+;;        (zipmap (range 1 (+ 1 (- e s))))))
+
+;; (into (sorted-map) (map-ids 1100000 (+ 1100000 5872)))
+
+;; (let [m-ind-evals (map-ids 1100000 (+ 1100000 (count (select evaluations_individuelles))))
+;;       m-notes (map-ids 1034309 (+ 1034309 (count (select notes))))
+;;       m-eleves (map-ids 1034265 (+ 1034265 (count (select eleves))))
+;;       m-coll-evals (map-ids 1034317 (+ 1034317 (count (select evaluations_collectives))))
+;;       m-comp (->> (select competences)
+;;                   (reduce (fn [m {:keys [competence_id]}]
+;;                             (assoc m competence_id (- -1000107 competence_id)))
+;;                           {}))]
+;;   (->> (select evaluations_individuelles)
+;;        (map (fn [{:keys [id_note id_eleve id_eval_col id_competence eval_ind_commentaire eval_ind_id]}]
+;;               {:db/id              (load-string (str "#db/id[:db.part/user " (m-ind-evals eval_ind_id) "]"))
+;;                :ind-eval/mark      (load-string (str "#db/id[:db.part/user " (m-notes id_note) "]"))
+;;                :ind-eval/comment   eval_ind_commentaire
+;;                :ind-eval/pupil     (load-string (str "#db/id[:db.part/user " (m-eleves id_eleve) "]"))
+;;                :ind-eval/coll-eval (load-string (str "#db/id[:db.part/user " (m-coll-evals id_eval_col) "]"))
+;;                :ind-eval/skill     (load-string (str "#db/id[:db.part/user " (m-comp id_competence) "]"))}))
+;;        (clojure.string/join "\n")
+;;        (spit "./samples/eval-ind.dtm")))
+
+(p/pprint "individual evaluations query")
+(-> '[:find ?iec ?pn ?pfn ?ieml ?iesn
+      :where
+      [?c :ind-eval/comment ?iec]
+      [?c :ind-eval/pupil ?iep]
+      [?iep :pupil/name ?pn]
+      [?iep :pupil/firstname ?pfn]
+      [?c :ind-eval/mark ?iem]
+      [?iem :mark/label ?ieml]
+      [?c :ind-eval/skill ?ies]
+      [?ies :skill/name ?iesn]]
+    (q (db conn))
+    seq
+    p/pprint)
