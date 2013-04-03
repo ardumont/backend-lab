@@ -1,4 +1,5 @@
-[ ;; persons
+[ 
+ ;; persons
  {:db/id #db/id[:db.part/user -1000001]
   :person/name      "Raffestin"
   :person/firstname "Elisabeth"
